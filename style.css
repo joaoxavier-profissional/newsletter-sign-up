@@ -6,7 +6,102 @@
 }
 
 
-@media (max-width: 500px) {
+@media (min-width: 651px) {
+    body {
+        background: hsl(235, 18%, 26%);
+        height: 90vh;
+        justify-content: center;
+        align-content: center;
+    }
+    
+    .card1 {
+        background: white;
+        display: flex;
+        flex-direction: row-reverse;
+        max-width: 700px;
+        margin: 0 auto;
+        padding: 1rem;
+        border-radius: 1rem;
+        box-shadow: 0 0 3rem rgba(0, 0, 0, 0.342);
+    }
+    
+    .card1 img {
+        width: 40%;
+        object-fit: cover;
+        border-radius: 1rem;
+    }
+    
+    .card1 section {
+        padding: 1rem;
+        margin-right: 1.5rem;
+    }
+    
+    h1 {
+        font-size: 2rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    
+    p {
+        margin-bottom: 1rem;
+    }
+    
+    ul {
+        margin-bottom: 2rem;
+        list-style-image: url("./assets/images/icon-list.svg");
+        padding-left: 1.6rem;
+    }
+    
+    li {
+        margin-bottom: 1rem;
+        padding-left: 1rem;
+    }
+    
+    .form label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+    }
+    
+    .form input {
+        display: block;
+        width: 100%;
+        margin-bottom: 1.15rem;
+        padding: 1rem;
+        border-radius: 0.5rem;
+        border: 1px solid gray;
+        font-size: 1rem;
+    }
+    
+    button {
+        display: block;
+        width: 100%;
+        padding: 1rem;
+        border-radius: 0.5rem;
+        border: 0;
+        font-weight: bold;
+        font-size: 1.15rem;
+        background: hsl(234, 29%, 20%);
+        color: white;
+        cursor: pointer;
+    }
+
+    
+    .card2 {
+        background: white;
+        padding: 1rem 1rem;
+        max-width: 400px;
+        margin: 0 auto;
+        border-radius: 1rem;
+    }
+
+    .hidden {
+        display: none;
+    }
+}
+
+
+@media (max-width: 650px) {
     main {
         display: grid;
         grid-template-columns: 1fr;
@@ -57,7 +152,7 @@
         font-size: 1rem;
     }
     
-    .form button {
+    button {
         display: block;
         width: 100%;
         padding: 1rem;
@@ -67,6 +162,18 @@
         font-size: 1.15rem;
         background: hsl(234, 29%, 20%);
         color: white;
+    }
+
+    .card2 {
+        margin: 1rem;
+    }
+
+    .card2 img {
+        width: 33%;
+    }
+
+    .hidden {
+        display: none;
     }
 }
 
