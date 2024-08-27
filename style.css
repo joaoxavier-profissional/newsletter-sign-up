@@ -58,9 +58,14 @@
     }
     
     .form label {
-        display: block;
+        display: flex;
+        justify-content: space-between;
         font-weight: bold;
-        margin-bottom: 0.5rem;
+        font-size: 1rem;
+    }
+
+    .error {
+        color: red;
     }
     
     .form input {
@@ -137,9 +142,14 @@
     }
     
     .form label {
-        display: block;
+        display: flex;
+        justify-content: space-between;
         font-weight: bold;
         margin-bottom: 0.5rem;
+    }
+
+    .error {
+        color: red;
     }
     
     .form input {
